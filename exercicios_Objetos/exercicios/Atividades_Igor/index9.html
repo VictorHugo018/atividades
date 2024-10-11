@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const carro = {
+            marca: "monza",
+            modelo: "monza ferrari",
+            proprietario: {
+                nome: "yago",
+                idade: 97
+            }
+        }
+
+        function verificarPropriedades(objeto,chave) {
+            for (propriedade in objeto) {
+                if (propriedade == chave) {
+                    return true
+                } 
+                else {
+                    continue
+                }
+            }
+            return false
+        }
+
+        console.log(verificarPropriedades(carro,'yago')) 
+    </script>
+</body>
+</html>
